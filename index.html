@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>руководство D.T.T.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <div class="logo">
+                <img src="img/maxresdefault.jpg" alt="logo" class="header__logo">
+                <h1 class="header__title">Defend The Train для начинающих</h1>
+            </div>
+            <nav class="navi">
+                <ul class="navi__list">
+                    <li class="navi__item">персонажи</li>
+                    <li class="navi__item" id="enemies_menu">враги и боссы</li>
+                    <li class="navi__item">оружия</li>
+                    <li class="navi__item">поезда и механики</li>
+                </ul>
+            </nav>
+            <div class="enemies_menu">
+              <ul class="enemies_list">
+                <li class="enemies_item">
+                  <a href="#enemies" class="enemies_link">враги</a>
+                </li>
+                <li class="enemies_item">
+                  <a href="queen.html" class="enemies_link">Королева бандитов</a>
+                </li>
+                <li class="enemies_item">
+                  <a href="sen_and_jun.html" class="enemies_link">Старший и Младший</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+<section class="base">
+    <div class="container container_base">
+
+        <h2 class="base__title">база для навичков</h2>
+        <p class="base__text">
+            Defend The Train или сокращённо D.T.T , это режим в котором вам с командой 
+            нужно защищать поезд от врагов , зарабатывая XP , и доезжать до следующей
+            станции , параллельно улучшая свои оружия и модифицируя поезд.Чтобы лучше
+            понять механики рекомендуется пройти обучение в игре.
+            
+            
+        </p>
+        <a href="https://www.roblox.com/games/4714308751/Defend-The-Train-BETA" target="_blank" class="base__link">
+            по этой ссылке вы можете поиграть
+        </a>
+    </div>
+</section>
+<section class="characters">
+    <div class="container container_characters">
+        <h2 class="characters__title">персонажи</h2>
+        <div class="itc-slider" data-slider="itc-slider">
+            <div class="itc-slider-wrapper">
+                <div class="itc-slider-items">
+                    <div class="itc-slider-item">
+                        <h3 class="slider__title">gunslinger</h3>
+                        <div class="slider__content">
+                           <img class="slider__img" src="img/gunslinger.png" alt="gunmaster">
+                           <p class="slider__text">
+                            Наступательный класс, специализирующийся на нанесении урона
+                             и точности противнику. Ваши стартовые предметы — штурмовая
+                              винтовка и пистолет.
+                           </p>
+                        </div>
+                    </div>
+                    <div class="itc-slider-item">
+                        <h3 class="slider__title">medic</h3>
+                        <div class="slider__content">
+                           <img class="slider__img" src="img/medic.png" alt="gunmaster">
+                           <p class="slider__text">
+                            Класс поддержки, способный исцелять других. Это необходимо
+                             для выживания команды. Ваши стартовые предметы — лечебный
+                              пистолет и пистолет.
+                           </p>
+                        </div>
+                    </div>
+                    <div class="itc-slider-item">
+                        <h3 class="slider__title">psycho</h3>
+                        <div class="slider__content">
+                           <img class="slider__img" src="img/psiho.png" alt="gunmaster">
+                           <p class="slider__text">
+                            Защитный класс, который превосходно наносит урон вражеской
+                             технике ценой точности. Ваши стартовые предметы — дробовик
+                              и пистолет.
+                           </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="itc-slider-btn itc-slider-btn-prev"></button>
+            <button class="itc-slider-btn itc-slider-btn-next"></button>
+        </div>
+    </div>
+</section>
+<section class="enemies" id="enemies" style="background-color: rgb(139, 29, 29);">
+<div class="container container_enemies">
+    <!-- <div class="accordion">
+        <div class="itc-accordion-item">
+          <div class="itc-accordion-header">
+            Враги уязвимые к gunslinger
+          </div>
+          <div class="itc-accordion-body">
+            Содержимое 1
+          </div>
+        </div>
+        <div class="itc-accordion-item">
+          <div class="itc-accordion-header">
+            Враги уязвимые к psycho
+          </div>
+          <div class="itc-accordion-body">
+          Содержимое 2
+          </div>
+        </div>
+        <div class="itc-accordion-item">
+            <div class="itc-accordion-header">
+             Враги уязвимые для всех
+            </div>
+            <div class="itc-accordion-body">
+            Содержимое 3
+            </div>
+          </div>
+      </div> -->
+      <h2 class="text-center">враги</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Враги уязвимые к &nbsp;<span class="text-primary">gunslinger</span>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul class="accordion_list list-unstyled d-flex flex-wrap gap-4 justify-content-around">
+                <li class="acordion_item">
+                  <h3 class="fs-3">двойной мотоцикл</h3>
+                  <img src="img/double_bike.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">зиплаин</h3>
+                  <img src="img/ZiplineEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">полицейский мотоцикл</h3>
+                  <img src="img/PoliceBikeEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">ховерборд</h3>
+                  <img src="img/HoverboardEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">летающий робот</h3>
+                  <img src="img/FlyingRobotEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">S.W.A.T.</h3>
+                  <img src="img/SwatVanEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">верталёт с высадкой</h3>
+                  <img width="120" src="img/2024-05-03 215045.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">квадроцикл</h3>
+                  <img width="120" src="img/2024-05-04 121738.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">сеновоз</h3>
+                  <img width="120" src="img/2024-05-04 11738.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">пикап с седлом</h3>
+                  <img width="120" src="img/2024-05-04 21738.png" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Враги уязвимые к &nbsp;<span class="text-danger">psycho</span> 
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul class="accordion_list list-unstyled d-flex flex-wrap gap-4 justify-content-around">
+                <li class="acordion_item">
+                  <h3 class="fs-3">воздушный шар</h3>
+                  <img src="img/HotAirBalloonEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">дирижабль</h3>
+                  <img src="img/BlimpEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">лодка</h3>
+                  <img src="img/BoatEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">ховерборд</h3>
+                  <img src="img/HoverboardEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">летающий робот</h3>
+                  <img src="img/FlyingRobotEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">S.W.A.T.</h3>
+                  <img src="img/SwatVanEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">верталёт с высадкой</h3>
+                  <img width="120" src="img/2024-05-03 215045.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">квадроцикл</h3>
+                  <img width="120" src="img/2024-05-04 121738.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">сеновоз</h3>
+                  <img width="120" src="img/2024-05-04 11738.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">пикап с седлом</h3>
+                  <img width="120" src="img/2024-05-04 21738.png" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Враги уязвимые &nbsp;<span class="text-danger">для</span> &nbsp;<span class="text-primary">всех</span>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul class="accordion_list list-unstyled d-flex flex-wrap gap-4 justify-content-around">
+                <li class="acordion_item">
+                  <h3 class="fs-3">бумажная птица</h3>
+                  <img src="img/PaperBirdEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">каяк</h3>
+                  <img src="img/KayakEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">летающая тарелка</h3>
+                  <img src="img/SaucerEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">джип с снайпером</h3>
+                  <img src="img/SniperJeepEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">летающая платформа</h3>
+                  <img src="img/FloatingPlatformEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">корзина</h3>
+                  <img src="img/CartEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">игрушечная машина</h3>
+                  <img width="120" src="img/ToyCarEnemyIcon.webp" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">кукурузник</h3>
+                  <img width="120" src="img/Снимок экрана 2024-05-02 230652.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">футурлёт</h3>
+                  <img width="120" src="img/Снимок экрана 2024-05-05 121401.png" alt="">
+                </li>
+                <li class="acordion_item">
+                  <h3 class="fs-3">вагонетка</h3>
+                  <img width="120" src="img/Снимок экрана 2024-05-05 125924.png" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/itc-slider.js"></script>
+    <script src="scripts/enemies_menu.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

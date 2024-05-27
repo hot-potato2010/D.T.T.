@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: linear-gradient(to right, blue, green, orange);
+}
+
+.header__logo {
+    width: 150px;
+    height: 150px;
+    ;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navi__list {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+.base{
+    background-image: linear-gradient(to right, red, black);
+}
+.container_base{
+    padding: 50px 0;
+}
+.base__text{
+    color: azure;
+}
+.base__link{
+    text-decoration: none;
+}
+.characters{
+    background-color: brown;
+}
+.container_characters{
+    padding: 45px 0;
+}
+.characters__title{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.itc-slider-item{
+    background-color:#6f3838;
+}
+.slider__title{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.slider__content{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.slider__text{
+    font-size: 38px;
+}
+.enemies_menu{
+    position: absolute;
+    background-color: rgb(89, 45, 45);
+    z-index: 2;
+    right: 300px;
+    top: 150px;
+    padding: 3px;
+    display: none;
+}
+.enemies_list{
+    list-style: none;
+}
+.enemies_link{
+    text-decoration: none;
+}
+.is-active{
+    display: block;
+}
